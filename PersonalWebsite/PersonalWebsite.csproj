@@ -137,6 +137,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\img\in_top_bj.jpg" />
+    <Content Include="Content\css\img\nav_gv.png" />
+    <Content Include="Content\css\img\top_logo.png" />
+    <Content Include="Content\css\index_style.css" />
+    <Content Include="Content\css\Music.mp3" />
+    <Content Include="Content\css\Music2.mp3" />
+    <Content Include="Content\css\邓紫棋_光年之外[原件].mp3" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -164,8 +171,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
