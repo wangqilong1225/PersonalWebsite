@@ -8,34 +8,34 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>个人主页</title>
     @*<link href="css/index_style.css" rel="stylesheet" type="text/css">*@
-    <link href="~/Content/css/index_style.css" rel="stylesheet" />
+    <link href="~/Content/css/index_style2.css" rel="stylesheet" />
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 </head>
 <body>
     <!-----HEADER STAR----->
 
     <div class="header" id="demo">
-        <div class="top_logo" style="margin: 0 auto;width: 750px;height: 200px;position: absolute;z-index: 100;top: 150px;left: 88%;margin-left: -390px;">
-            <span style="font-size: 103px;color: #1d7eb8;margin-left: 7%;line-height: 365%;">个&nbsp;人&nbsp;网&nbsp;站</span>
+        <div class="top_logo2" style="margin:0 auto;text-align:center;position:absolute;">
+            <span style="font-size: 125px;color:#1d7eb8;text-align:center;">个&nbsp;人&nbsp;网&nbsp;站</span>
         </div>
 
-        <div class="nav" style="top: 541px;">
+        @*<div class="nav" style="top: 541px;">
             <a class="gv" href="https://blog.csdn.net/qq_36330228">CSDN</a>&nbsp;
             <a class="gv" href="https://github.com/wangqilong1225">GitHub</a>&nbsp;
             <a class="gv" href="http://www.cnblogs.com/wangqilong/">博客园</a>
-            @*<a class="gv" href="#">工 作 站</a>c
+            <a class="gv" href="#">工 作 站</a>c
                 <a class="gv" href="#">资讯中心</a>
-                <a class="gv" href="#">在线帮助</a>*@
-        </div>
+                <a class="gv" href="#">在线帮助</a>
+        </div>*@
 
-        <div class="canvaszz"> </div>
-        <canvas id="canvas" width="1155" style="width:170%;"></canvas>
+
+        <canvas id="canvas"></canvas>
     </div>
 
 
     <!-----HEADER END----->
     <!--用来解决视频右键菜单，用于视频上面的遮罩层 START-->
-    <div class="videozz"></div>
+    @*<div class="videozz"></div>*@
     <!--用来解决视频右键菜单，用于视频上面的遮罩层 END-->
     <!--音乐 START-->
     @*<audio controls autoplay class="audio">//自动播放属性
