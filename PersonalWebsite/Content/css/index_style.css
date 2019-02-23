@@ -74,8 +74,7 @@ body {margin:0 auto;overflow:hidden;}
 	font:18px/43px 'microsoft yahei'; color:#066197;
 	}
 .header .nav a.gv span {
-	 display: none;
-	 	
+	 display: none;	 	
 }
 .header .nav a.gv:hover { 
 	background: url(img/nav_gv.png) repeat 0px -43px; 
@@ -91,5 +90,4 @@ body {margin:0 auto;overflow:hidden;}
 	margin-left: -490px;
 	position:absolute;
 	z-index:20;
-
-	}
+}

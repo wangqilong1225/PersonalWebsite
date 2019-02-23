@@ -1,49 +1,53 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
 <!DOCTYPE HTML>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>个人主页</title>
+    <title>Home Page</title>
     @*<link href="css/index_style.css" rel="stylesheet" type="text/css">*@
-    <link href="~/Content/css/index_style.css" rel="stylesheet" />
-    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <link href="~/Content/css/index_style5.css" rel="stylesheet" />
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>   
+    <style>
+        .header .nav a.gv {
+            text-decoration: none;
+            background: url('../../Content/css/img/nav_gv.png') repeat 0px 0px;
+            width: 130px;
+            height: 43px;
+            display: block;
+            text-align: center; /*水平居中*/
+            line-height: 43px;  /*上下居中*/
+            cursor: pointer;
+            float: left;        /*左浮动*/
+            margin: 8px 2px 25px 25px;
+            font: 18px/43px 'microsoft yahei';
+            color: #066197;
+        }
+        .header .nav a.gv:hover {
+            background: url('../../Content/css/img/nav_gv.png') repeat 0px -43px;
+            color: #1d7eb8;
+            -webkit-box-shadow: 0 0 6px #1d7eb8;
+            transition-duration: 0.5s;
+        }
+    </style>
 </head>
-<body>
-    <!-----HEADER STAR----->
 
+<body style="margin:0 auto;overflow:hidden;">
+    <!-----HEADER STAR----->
     <div class="header" id="demo">
-        <div class="top_logo">
-            <span style="font-size: 60px;color: #1d7eb8;margin-left: 33%;line-height: 365%;">个&nbsp;人&nbsp;网&nbsp;站</span>
+        <div class="top_logo" style="position:absolute;left:41%;top:8%;">
+            <span style="font-size: 60px;color: #1d7eb8;">个&nbsp;人&nbsp;网&nbsp;站</span>
         </div>
 
-        <div class="nav">
+        <div class="nav" style="position:absolute;left:35%;top:30%;">
             <a class="gv" href="https://blog.csdn.net/qq_36330228">CSDN</a>&nbsp;
             <a class="gv" href="https://github.com/wangqilong1225">GitHub</a>&nbsp;
-            <a class="gv" href="http://www.cnblogs.com/wangqilong/">博客园</a>
-            <a class="gv" href="#">工 作 站</a>
-            @*<a class="gv" href="#">资讯中心</a>
-        <a class="gv" href="#">在线帮助</a>*@
+            <a class="gv" href="http://www.cnblogs.com/wangqilong/">博客园</a>               
         </div>
-
-       
-        <canvas id="canvas"></canvas>
+        
+        <canvas id="canvas" style="width:100%;height:auto;"></canvas>
     </div>
-
-
-    <!-----HEADER END----->
-    <!--用来解决视频右键菜单，用于视频上面的遮罩层 START-->
-    <div class="videozz"></div>
-    <!--用来解决视频右键菜单，用于视频上面的遮罩层 END-->
-    <!--音乐 START-->
-    @*<audio controls autoplay class="audio">//自动播放属性
-        <source src="~/Content/css/Music.mp3" type="audio/mp3">播放
-        <source src="~/Content/css/Music.ogg" type="audio/ogg">
-        <source src="~/Content/css/Music.aac" type="audio/mp4">
-    </audio>*@
-    <!--音乐 END-->
 
     <script>
         //宇宙特效
@@ -56,12 +60,12 @@
             hue = 217,
             stars = [],
             count = 0,
-            maxStars = 1300;//星星数量
+            maxStars = 1500;//星星数量
 
         var canvas2 = document.createElement('canvas'),
             ctx2 = canvas2.getContext('2d');
-        canvas2.width = 100;
-        canvas2.height = 100;
+        canvas2.width = 500;
+        canvas2.height =500;
         var half = canvas2.width / 2,
             gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
         gradient2.addColorStop(0.025, '#CCC');
