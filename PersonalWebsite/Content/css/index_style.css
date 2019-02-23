@@ -57,8 +57,7 @@ body {margin:0 auto;overflow:hidden;}
 	position:absolute;
 	z-index:30;
 	top:270px;
-	left: 33%;  /*50%*/
-	
+	left: 33%;  /*50%*/	
 	}
 .header .nav a.gv { 
 	text-decoration:none; 
