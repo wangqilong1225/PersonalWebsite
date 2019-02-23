@@ -9,15 +9,13 @@ body {margin:0 auto;overflow:hidden;}
     background-color: #1d7eb8; /*#000;*/*/
     /*position: relative;*/
 }
-    .header canvas {
-        width: auto;
-        height: auto; /*默认全屏显示 可自己设置高度640px*/;
-        display: inline-block;
-        vertical-align: baseline;
-        z-index:-1;
-    }
-
-
+.header canvas {
+    width: auto;
+    height: auto; /*默认全屏显示 可自己设置高度640px*/;
+    display: inline-block;
+    vertical-align: baseline;
+    z-index:-1;
+}
 
 .header .top_logo{
 	margin:0 auto;
