@@ -55,7 +55,6 @@
         <canvas id="canvas"></canvas>
     </div>
 
-
     <script>
         //宇宙特效
         "use strict";
@@ -63,7 +62,6 @@
             ctx = canvas.getContext('2d'),
             w = canvas.width = window.innerWidth,
             h = canvas.height = window.innerHeight,
-
             hue = 217,
             stars = [],
             count = 0,
@@ -152,10 +150,8 @@
             for (var i = 1, l = stars.length; i < l; i++) {
                 stars[i].draw();
             };
-
             window.requestAnimationFrame(animation);
         }
-
         animation();
     </script>
 
